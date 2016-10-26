@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html style="font-size: 20px">
+
+<head>
+    <meta charset="utf-8">
+    <title>车险</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link rel="stylesheet" href="/dist/iconfont/iconfont.css">
+    <link rel="stylesheet" href="/dist/style.css">
+</head>
+
+<body style="font-size: 12px;">
+    <div id="app">	
+        <router-view ></router-view>
+    </div>
+    <script src="/dist/common.js"></script>
+    <script src="/dist/build.js"></script>
+    <script type="text/javascript">
+
+        //自适应屏幕改变html的font-size大小
+
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth >= 540){
+                        docEl.style.fontSize = 33.75 + 'px';
+                    }else{
+                        docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+    </script>
+</body>
+
+</html>
