@@ -1,0 +1,66 @@
+footer.fixed{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+footer{
+    width: 100%;
+    height: 2.2rem;
+    background: white;
+
+    .footer-nav{
+        color: rgb(128, 128, 128);
+        border-top: 1px solid #ccc;
+
+        .iconTab{
+            width: 1.1rem;
+            height: 1.1rem;
+            margin: 0 auto;
+            margin-top: 0.11rem;
+            margin-bottom: 0.05rem;
+        }
+        .iconTab.home{
+            background: url(../images/components/home.png);
+            background-size: 1.1rem;
+        }
+        .iconTab.serv{
+            background: url(../images/components/serv.png);
+            background-size: 1.1rem;
+        }
+        .iconTab.order{
+            background: url(../images/components/order.png);
+            background-size: 1.1rem;
+        }
+        .iconTab.mine{
+            background: url(../images/components/mine.png);
+            background-size: 1.1rem;
+        }
+        .tab_name{
+            line-height: 1.4;
+            text-align: center;
+        }
+        
+        .active{
+            .iconTab.home{
+                background: url(../images/components/home_active.png);
+                background-size: 1.1rem;
+            }
+            .iconTab.serv{
+                background: url(../images/components/serv_active.png);
+                background-size: 1.1rem;
+            }
+            .iconTab.order{
+                background: url(../images/components/order_active.png);
+                background-size: 1.1rem;
+            }
+            .iconTab.mine{
+                background: url(../images/components/mine_active.png);
+                background-size: 1.1rem;
+            }
+            .tab_name{
+                color: rgb(244, 67, 53);
+            }
+        }
+    }
+}

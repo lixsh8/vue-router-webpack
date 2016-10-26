@@ -1,0 +1,5 @@
+[
+	{"t1": "今日优惠", "t2": "超值特惠", "img": "../dist/images/a36a3474b53823833bc95cf64a39837a.jpg"},
+	{"t1": "本周推荐", "t2": "不能错过", "img": "../src/assets/images/act2.jpg"},
+	{"t1": "预约有礼", "t2": "一年仅一次", "img": "../src/assets/images/act3.jpg"}
+]

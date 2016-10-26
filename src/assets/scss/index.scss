@@ -1,0 +1,159 @@
+@import './common/reset.scss';
+@import './common/common.scss';
+
+@import './footer.scss';
+@import './swipe.scss';
+
+
+//轮播图
+.slider{
+	margin-bottom: 6px;
+}
+.my-swipe {
+  height: 4rem;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.swipe-item img{
+	display: block;
+	width: 100%;
+}
+
+//轮播图
+
+
+.activity{
+	background: white;
+	text-align: center;
+	
+	li{
+	    border-right: 1px solid #e6e6e6;
+		background: white;
+		padding-top: 8px;
+		
+		&:last-child{
+			border-right: none;
+		}
+
+		h2{
+			font-size: 12px;
+			color: #ff3853;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		h3{
+			font-size: 12px;
+			color: gray;
+			text-align: center;
+			font-weight: normal;
+		}
+
+		img{
+			width: 2.2rem;
+			height: 2.2rem;
+			padding-top: .4rem;
+		}
+	}
+}
+.insurance{
+	background-color: #fff;
+	margin-top: 6px;
+	
+	.title{
+		height: 1.8rem;
+	    line-height: 1.8rem;
+	    vertical-align: middle;
+	    padding-left: 10px;
+	    font-size: 12px;
+	    color: #333;
+	    border-bottom: 1px solid #e6e6e6;
+	    background: white;
+	}
+
+	ul{
+	    margin: 0;
+	    padding: 0;
+	    font-size: 0;
+
+		li{
+			margin: 0;
+		    padding: 0;
+		    list-style-type: none;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    flex-direction: row;
+		    -webkit-flex-direction: row;
+		    width: 50%;
+		    float: left;
+		    -webkit-box-sizing: border-box;
+		    box-sizing: border-box;
+		    line-height: 2.7rem;
+		    border-bottom: 1px solid #e6e6e6;
+
+			.icon {
+			    width: 3.3rem;
+			    height: 2.7rem;
+			    line-height: 2.7rem;
+			    vertical-align: middle;
+			    display: inline-block;
+			    text-align: left;
+			    font-size: 0;
+			    padding-left: 0.25rem;
+
+			    img {
+				    width: 2.2rem;
+				    height: 2.2rem;
+				    margin-left: .6rem;
+				    display: inline-block;
+				    line-height: 2.2rem;
+				}
+			}
+				
+			.desc {
+			    width: 4.5rem;
+			    height: 2.7rem;
+			    line-height: 2.7rem;
+			    vertical-align: middle;
+			    display: inline-block;
+			    text-align: right;
+			    font-size: 0;
+			    overflow: hidden;
+			    .p1{
+			    	width:100%;
+			    	margin-top: 0.6rem;
+				    font-size: 14px;
+				    color: #f44335;
+				    line-height: 1;
+				    padding-right: .6rem;
+				}
+				.p2{
+			    	width:100%;
+					font-size: 14px;
+				    line-height: 1;
+				    color: gray;
+				    margin-top: .2rem;
+				    padding-right: .6rem;
+				}
+			}
+
+			&:nth-child(odd) {
+			    border-right: 1px solid #e6e6e6;
+			}
+		}
+
+		&:after{
+			content: "";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			height: 0;
+		}
+	}
+}
+

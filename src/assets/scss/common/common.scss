@@ -1,0 +1,42 @@
+body{
+   background: #f3f3f3; 
+}
+//flex布局
+.flex-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-item {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+}
+//文字溢出省略...
+.txt-overflow{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+// 按钮
+.btn{
+    height: 44px;
+    font-size: 15px;
+    border-radius:5px;
+}
+.btn-primary{
+    color: white;
+    background: #f44335;
+}
+.btn-disabled{
+    color: white;
+    background: #ccc;
+}
